@@ -22,18 +22,18 @@ from app.models.repository import (
     RepositoryFileListResponse,
     FileContentResponse,
 )
-from backend.app.models.qa import AskQuestionRequest, AskQuestionResponse
-from backend.app.models.bug import AnalyzeBugRequest, BugAnalysisResponse
-from backend.app.models.contributor import ContributorGuideResponse
-from backend.app.models.history import HistoryItem, SettingsResponse
-from backend.app.services.github_service import GitHubService
-from backend.app.services.indexing_service import IndexingService
-from backend.app.services.retrieval_service import RetrievalService
-from backend.app.services.llm_service import LLMService
-from backend.app.services.bug_analysis_service import BugAnalysisService
-from backend.app.services.contributor_service import ContributorService
-from backend.app.services.repository_service import RepositoryService
-from backend.app.fixtures.sample_repo import (
+from app.models.qa import AskQuestionRequest, AskQuestionResponse
+from app.models.bug import AnalyzeBugRequest, BugAnalysisResponse
+from app.models.contributor import ContributorGuideResponse
+from app.models.history import HistoryItem, SettingsResponse
+from app.services.github_service import GitHubService
+from app.services.indexing_service import IndexingService
+from app.services.retrieval_service import RetrievalService
+from app.services.llm_service import LLMService
+from app.services.bug_analysis_service import BugAnalysisService
+from app.services.contributor_service import ContributorService
+from app.services.repository_service import RepositoryService
+from app.fixtures.sample_repo import (
     SAMPLE_REPO_ID,
     SAMPLE_REPO_OWNER,
     SAMPLE_REPO_NAME,
