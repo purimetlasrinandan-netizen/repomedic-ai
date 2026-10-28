@@ -5,9 +5,9 @@ from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks, status, 
 from sqlalchemy import select, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.core.config import get_settings
-from backend.app.core.security import validate_github_url, is_safe_relative_path
-from backend.app.core.errors import (
+from app.core.config import get_settings
+from app.core.security import validate_github_url, is_safe_relative_path
+from app.core.errors import (
     RepoMedicException,
     InvalidRepositoryUrlError,
     RepositoryNotFoundError,
