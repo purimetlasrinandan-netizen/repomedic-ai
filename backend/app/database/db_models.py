@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timezone
 from sqlalchemy import Column, String, Integer, Text, DateTime, ForeignKey, Index
 from sqlalchemy.orm import relationship
-from backend.app.database.session import Base
+from app.database.session import Base
 
 
 class RepositoryRecord(Base):
