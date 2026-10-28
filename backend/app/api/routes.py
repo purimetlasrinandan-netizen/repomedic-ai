@@ -13,9 +13,9 @@ from app.core.errors import (
     RepositoryNotFoundError,
     FileAccessDeniedError,
 )
-from backend.app.database.session import get_db, AsyncSessionLocal
-from backend.app.database.db_models import RepositoryRecord, IndexedFileRecord, QuestionRecord
-from backend.app.models.repository import (
+from app.database.session import get_db, AsyncSessionLocal
+from app.database.db_models import RepositoryRecord, IndexedFileRecord, QuestionRecord
+from app.models.repository import (
     AnalyzeRepositoryRequest,
     AnalysisProgressStatus,
     RepositoryMetadata,
