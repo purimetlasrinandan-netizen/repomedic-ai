@@ -4,11 +4,10 @@ from fastapi import FastAPI, Request, status
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.core.config import get_settings
-from backend.app.core.errors import RepoMedicException
-from backend.app.database.session import init_db
-from backend.app.api.routes import router
-
+from app.core.config import get_settings
+from app.core.errors import RepoMedicException
+from app.database.session import init_db
+from app.api.routes import router
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
